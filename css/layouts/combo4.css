@@ -1,0 +1,1590 @@
+/*!
+Pure v0.6.0
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+https://github.com/yahoo/pure/blob/master/LICENSE.md
+*/
+/*!
+normalize.css v^3.0 | MIT License | git.io/normalize
+Copyright (c) Nicolas Gallagher and Jonathan Neal
+*/
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/*csslint important:false*/
+
+/* ==========================================================================
+   Pure Base Extras
+   ========================================================================== */
+
+/**
+ * Extra rules that Pure adds on top of Normalize.css
+ */
+
+/**
+ * Always hide an element when it has the `hidden` HTML attribute.
+ */
+
+.hidden,
+[hidden] {
+    display: none !important;
+}
+
+/**
+ * Add this class to an image to make it fit within it's fluid parent wrapper while maintaining
+ * aspect ratio.
+ */
+.pure-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+body {
+    color: #333;
+}
+
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+Add transition to containers so they can push in and out.
+*/
+#layout,
+#menu,
+.menu-link {
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -ms-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+
+/*
+This is the parent `<div>` that contains the menu and the content area.
+*/
+#layout {
+    position: relative;
+    padding-left: 0;
+}
+    #layout.active #menu {
+        left: 170px;
+        width: 170px;
+    }
+
+    #layout.active .menu-link {
+        left: 170px;
+    }
+/*
+The content `<div>` is where all your content goes.
+*/
+.content {
+    margin: 0 auto;
+    padding: 0 2em;
+    max-width: 800px;
+    margin-bottom: 50px;
+	margin-top: 10px;
+    line-height: 1.5em;
+}
+
+.header {
+     margin: 0;
+     color: #333;
+     text-align: center;
+     padding: 0.5em 1.5em 0;
+     border-bottom: 1px solid #eee;
+ }
+    .header h1 {
+        margin: 0.2em 0;
+        font-size: 2.25em;
+        font-weight: 300;
+    }
+     .header h2 {
+        font-weight: 300;
+		font-size: 1.5em;
+        color: #111;
+        padding: 0;
+        margin-top: 0;
+		margin-bottom: 0;
+    }
+		 .header h3 {
+        font-weight: 100;
+		font-size: 1.1em;
+        color: #111;
+        padding: 0;
+        margin-top: 0;
+		margin-bottom: 10px;
+    }
+
+.content-subhead {
+    margin: 20px 0 10px 0;
+    font-weight: 300;
+	font-size: 1.5em;
+    color: #222;
+}
+
+
+
+/*
+The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
+appears on the left side of the page.
+*/
+
+#menu {
+    margin-left: -170px; /* "#menu" width */
+    width: 170px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000; /* so the menu or its navicon stays above all content */
+    background: #191818;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+    /*
+    All anchors inside the menu should be styled like this.
+    */
+    #menu a {
+        color: #DDD;
+        border: none;
+        padding: 0.6em 0 0.6em 0.6em;
+    }
+
+    /*
+    Remove all background/borders, since we are applying them to #menu.
+    */
+     #menu .pure-menu,
+     #menu .pure-menu ul {
+        border: none;
+        background: transparent;
+    }
+
+    /*
+    Add that light border to separate items into groups.
+    */
+    #menu .pure-menu ul,
+    #menu .pure-menu .menu-item-divided {
+        border-top: 1px solid #333;
+    }
+        /*
+        Change color of the anchor links on hover/focus.
+        */
+        #menu .pure-menu li a:hover,
+        #menu .pure-menu li a:focus {
+            background: #333;
+        }
+
+    /*
+    This styles the selected menu item `<li>`.
+    */
+    #menu .pure-menu-selected,
+    #menu .pure-menu-heading {
+        background: #1f8dd6;
+    }
+        /*
+        This styles a link within a selected menu item `<li>`.
+        */
+        #menu .pure-menu-selected a {
+            color: #fff;
+        }
+
+    /*
+    This styles the menu heading.
+    */
+    #menu .pure-menu-heading {
+        font-size: 110%;
+        color: #fff;
+        margin: 0;
+    }
+
+/* -- Dynamic Button For Responsive Menu -------------------------------------*/
+
+/*
+The button to open/close the Menu is custom-made and not part of Pure. Here's
+how it works:
+*/
+
+/*
+`.menu-link` represents the responsive menu toggle that shows/hides on
+small screens.
+*/
+.menu-link {
+    position: fixed;
+    display: block; /* show this only on small screens */
+    top: 0;
+    left: 0; /* "#menu width" */
+    background: #000;
+    background: rgba(0,0,0,0.7);
+    font-size: 10px; /* change this value to increase/decrease button size */
+    z-index: 10;
+    width: 2em;
+    height: auto;
+    padding: 2.1em 1.6em;
+}
+
+    .menu-link:hover,
+    .menu-link:focus {
+        background: #000;
+    }
+
+    .menu-link span {
+        position: relative;
+        display: block;
+    }
+
+    .menu-link span,
+    .menu-link span:before,
+    .menu-link span:after {
+        background-color: #fff;
+        width: 100%;
+        height: 0.2em;
+    }
+
+        .menu-link span:before,
+        .menu-link span:after {
+            position: absolute;
+            margin-top: -0.6em;
+            content: " ";
+        }
+
+        .menu-link span:after {
+            margin-top: 0.6em;
+        }
+
+
+/* -- Responsive Styles (Media Queries) ------------------------------------- */
+
+/*
+Hides the menu at `48em`, but modify this based on your app's needs.
+*/
+@media (min-width: 48em) {
+
+    .header,
+    .content {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    #layout {
+        padding-left: 170px; /* left col width "#menu" */
+        left: 0;
+    }
+    #menu {
+        left: 170px;
+    }
+
+    .menu-link {
+        position: fixed;
+        left: 170px;
+        display: none;
+    }
+
+    #layout.active .menu-link {
+        left: 170px;
+    }
+}
+
+@media (max-width: 48em) {
+    /* Only apply this when the window is small. Otherwise, the following
+    case results in extra padding on the left:
+        * Make the window small.
+        * Tap the menu to trigger the active state.
+        * Make the window large again.
+    */
+    #layout.active {
+        position: relative;
+        left: 170px;
+    }
+}
+
+
+/*!
+Pure v0.6.0
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+https://github.com/yahoo/pure/blob/master/LICENSE.md
+*/
+@media screen and (min-width: 35.5em) {
+    .pure-u-sm-1,
+    .pure-u-sm-1-1,
+    .pure-u-sm-1-2,
+    .pure-u-sm-1-3,
+    .pure-u-sm-2-3,
+    .pure-u-sm-1-4,
+    .pure-u-sm-3-4,
+    .pure-u-sm-1-5,
+    .pure-u-sm-2-5,
+    .pure-u-sm-3-5,
+    .pure-u-sm-4-5,
+    .pure-u-sm-5-5,
+    .pure-u-sm-1-6,
+    .pure-u-sm-5-6,
+    .pure-u-sm-1-8,
+    .pure-u-sm-3-8,
+    .pure-u-sm-5-8,
+    .pure-u-sm-7-8,
+    .pure-u-sm-1-12,
+    .pure-u-sm-5-12,
+    .pure-u-sm-7-12,
+    .pure-u-sm-11-12,
+    .pure-u-sm-1-24,
+    .pure-u-sm-2-24,
+    .pure-u-sm-3-24,
+    .pure-u-sm-4-24,
+    .pure-u-sm-5-24,
+    .pure-u-sm-6-24,
+    .pure-u-sm-7-24,
+    .pure-u-sm-8-24,
+    .pure-u-sm-9-24,
+    .pure-u-sm-10-24,
+    .pure-u-sm-11-24,
+    .pure-u-sm-12-24,
+    .pure-u-sm-13-24,
+    .pure-u-sm-14-24,
+    .pure-u-sm-15-24,
+    .pure-u-sm-16-24,
+    .pure-u-sm-17-24,
+    .pure-u-sm-18-24,
+    .pure-u-sm-19-24,
+    .pure-u-sm-20-24,
+    .pure-u-sm-21-24,
+    .pure-u-sm-22-24,
+    .pure-u-sm-23-24,
+    .pure-u-sm-24-24 {
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        letter-spacing: normal;
+        word-spacing: normal;
+        vertical-align: top;
+        text-rendering: auto;
+    }
+
+    .pure-u-sm-1-24 {
+        width: 4.1667%;
+        *width: 4.1357%;
+    }
+
+    .pure-u-sm-1-12,
+    .pure-u-sm-2-24 {
+        width: 8.3333%;
+        *width: 8.3023%;
+    }
+
+    .pure-u-sm-1-8,
+    .pure-u-sm-3-24 {
+        width: 12.5000%;
+        *width: 12.4690%;
+    }
+
+    .pure-u-sm-1-6,
+    .pure-u-sm-4-24 {
+        width: 16.6667%;
+        *width: 16.6357%;
+    }
+
+    .pure-u-sm-1-5 {
+        width: 20%;
+        *width: 19.9690%;
+    }
+
+    .pure-u-sm-5-24 {
+        width: 20.8333%;
+        *width: 20.8023%;
+    }
+
+    .pure-u-sm-1-4,
+    .pure-u-sm-6-24 {
+        width: 25%;
+        *width: 24.9690%;
+    }
+
+    .pure-u-sm-7-24 {
+        width: 29.1667%;
+        *width: 29.1357%;
+    }
+
+    .pure-u-sm-1-3,
+    .pure-u-sm-8-24 {
+        width: 33.3333%;
+        *width: 33.3023%;
+    }
+
+    .pure-u-sm-3-8,
+    .pure-u-sm-9-24 {
+        width: 37.5000%;
+        *width: 37.4690%;
+    }
+
+    .pure-u-sm-2-5 {
+        width: 40%;
+        *width: 39.9690%;
+    }
+
+    .pure-u-sm-5-12,
+    .pure-u-sm-10-24 {
+        width: 41.6667%;
+        *width: 41.6357%;
+    }
+
+    .pure-u-sm-11-24 {
+        width: 45.8333%;
+        *width: 45.8023%;
+    }
+
+    .pure-u-sm-1-2,
+    .pure-u-sm-12-24 {
+        width: 50%;
+        *width: 49.9690%;
+    }
+
+    .pure-u-sm-13-24 {
+        width: 54.1667%;
+        *width: 54.1357%;
+    }
+
+    .pure-u-sm-7-12,
+    .pure-u-sm-14-24 {
+        width: 58.3333%;
+        *width: 58.3023%;
+    }
+
+    .pure-u-sm-3-5 {
+        width: 60%;
+        *width: 59.9690%;
+    }
+
+    .pure-u-sm-5-8,
+    .pure-u-sm-15-24 {
+        width: 62.5000%;
+        *width: 62.4690%;
+    }
+
+    .pure-u-sm-2-3,
+    .pure-u-sm-16-24 {
+        width: 66.6667%;
+        *width: 66.6357%;
+    }
+
+    .pure-u-sm-17-24 {
+        width: 70.8333%;
+        *width: 70.8023%;
+    }
+
+    .pure-u-sm-3-4,
+    .pure-u-sm-18-24 {
+        width: 75%;
+        *width: 74.9690%;
+    }
+
+    .pure-u-sm-19-24 {
+        width: 79.1667%;
+        *width: 79.1357%;
+    }
+
+    .pure-u-sm-4-5 {
+        width: 80%;
+        *width: 79.9690%;
+    }
+
+    .pure-u-sm-5-6,
+    .pure-u-sm-20-24 {
+        width: 83.3333%;
+        *width: 83.3023%;
+    }
+
+    .pure-u-sm-7-8,
+    .pure-u-sm-21-24 {
+        width: 87.5000%;
+        *width: 87.4690%;
+    }
+
+    .pure-u-sm-11-12,
+    .pure-u-sm-22-24 {
+        width: 91.6667%;
+        *width: 91.6357%;
+    }
+
+    .pure-u-sm-23-24 {
+        width: 95.8333%;
+        *width: 95.8023%;
+    }
+
+    .pure-u-sm-1,
+    .pure-u-sm-1-1,
+    .pure-u-sm-5-5,
+    .pure-u-sm-24-24 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .pure-u-md-1,
+    .pure-u-md-1-1,
+    .pure-u-md-1-2,
+    .pure-u-md-1-3,
+    .pure-u-md-2-3,
+    .pure-u-md-1-4,
+    .pure-u-md-3-4,
+    .pure-u-md-1-5,
+    .pure-u-md-2-5,
+    .pure-u-md-3-5,
+    .pure-u-md-4-5,
+    .pure-u-md-5-5,
+    .pure-u-md-1-6,
+    .pure-u-md-5-6,
+    .pure-u-md-1-8,
+    .pure-u-md-3-8,
+    .pure-u-md-5-8,
+    .pure-u-md-7-8,
+    .pure-u-md-1-12,
+    .pure-u-md-5-12,
+    .pure-u-md-7-12,
+    .pure-u-md-11-12,
+    .pure-u-md-1-24,
+    .pure-u-md-2-24,
+    .pure-u-md-3-24,
+    .pure-u-md-4-24,
+    .pure-u-md-5-24,
+    .pure-u-md-6-24,
+    .pure-u-md-7-24,
+    .pure-u-md-8-24,
+    .pure-u-md-9-24,
+    .pure-u-md-10-24,
+    .pure-u-md-11-24,
+    .pure-u-md-12-24,
+    .pure-u-md-13-24,
+    .pure-u-md-14-24,
+    .pure-u-md-15-24,
+    .pure-u-md-16-24,
+    .pure-u-md-17-24,
+    .pure-u-md-18-24,
+    .pure-u-md-19-24,
+    .pure-u-md-20-24,
+    .pure-u-md-21-24,
+    .pure-u-md-22-24,
+    .pure-u-md-23-24,
+    .pure-u-md-24-24 {
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        letter-spacing: normal;
+        word-spacing: normal;
+        vertical-align: top;
+        text-rendering: auto;
+    }
+
+    .pure-u-md-1-24 {
+        width: 4.1667%;
+        *width: 4.1357%;
+    }
+
+    .pure-u-md-1-12,
+    .pure-u-md-2-24 {
+        width: 8.3333%;
+        *width: 8.3023%;
+    }
+
+    .pure-u-md-1-8,
+    .pure-u-md-3-24 {
+        width: 12.5000%;
+        *width: 12.4690%;
+    }
+
+    .pure-u-md-1-6,
+    .pure-u-md-4-24 {
+        width: 16.6667%;
+        *width: 16.6357%;
+    }
+
+    .pure-u-md-1-5 {
+        width: 20%;
+        *width: 19.9690%;
+    }
+
+    .pure-u-md-5-24 {
+        width: 20.8333%;
+        *width: 20.8023%;
+    }
+
+    .pure-u-md-1-4,
+    .pure-u-md-6-24 {
+        width: 25%;
+        *width: 24.9690%;
+    }
+
+    .pure-u-md-7-24 {
+        width: 29.1667%;
+        *width: 29.1357%;
+    }
+
+    .pure-u-md-1-3,
+    .pure-u-md-8-24 {
+        width: 33.3333%;
+        *width: 33.3023%;
+    }
+
+    .pure-u-md-3-8,
+    .pure-u-md-9-24 {
+        width: 37.5000%;
+        *width: 37.4690%;
+    }
+
+    .pure-u-md-2-5 {
+        width: 40%;
+        *width: 39.9690%;
+    }
+
+    .pure-u-md-5-12,
+    .pure-u-md-10-24 {
+        width: 41.6667%;
+        *width: 41.6357%;
+    }
+
+    .pure-u-md-11-24 {
+        width: 45.8333%;
+        *width: 45.8023%;
+    }
+
+    .pure-u-md-1-2,
+    .pure-u-md-12-24 {
+        width: 50%;
+        *width: 49.9690%;
+    }
+
+    .pure-u-md-13-24 {
+        width: 54.1667%;
+        *width: 54.1357%;
+    }
+
+    .pure-u-md-7-12,
+    .pure-u-md-14-24 {
+        width: 58.3333%;
+        *width: 58.3023%;
+    }
+
+    .pure-u-md-3-5 {
+        width: 60%;
+        *width: 59.9690%;
+    }
+
+    .pure-u-md-5-8,
+    .pure-u-md-15-24 {
+        width: 62.5000%;
+        *width: 62.4690%;
+    }
+
+    .pure-u-md-2-3,
+    .pure-u-md-16-24 {
+        width: 66.6667%;
+        *width: 66.6357%;
+    }
+
+    .pure-u-md-17-24 {
+        width: 70.8333%;
+        *width: 70.8023%;
+    }
+
+    .pure-u-md-3-4,
+    .pure-u-md-18-24 {
+        width: 75%;
+        *width: 74.9690%;
+    }
+
+    .pure-u-md-19-24 {
+        width: 79.1667%;
+        *width: 79.1357%;
+    }
+
+    .pure-u-md-4-5 {
+        width: 80%;
+        *width: 79.9690%;
+    }
+
+    .pure-u-md-5-6,
+    .pure-u-md-20-24 {
+        width: 83.3333%;
+        *width: 83.3023%;
+    }
+
+    .pure-u-md-7-8,
+    .pure-u-md-21-24 {
+        width: 87.5000%;
+        *width: 87.4690%;
+    }
+
+    .pure-u-md-11-12,
+    .pure-u-md-22-24 {
+        width: 91.6667%;
+        *width: 91.6357%;
+    }
+
+    .pure-u-md-23-24 {
+        width: 95.8333%;
+        *width: 95.8023%;
+    }
+
+    .pure-u-md-1,
+    .pure-u-md-1-1,
+    .pure-u-md-5-5,
+    .pure-u-md-24-24 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .pure-u-lg-1,
+    .pure-u-lg-1-1,
+    .pure-u-lg-1-2,
+    .pure-u-lg-1-3,
+    .pure-u-lg-2-3,
+    .pure-u-lg-1-4,
+    .pure-u-lg-3-4,
+    .pure-u-lg-1-5,
+    .pure-u-lg-2-5,
+    .pure-u-lg-3-5,
+    .pure-u-lg-4-5,
+    .pure-u-lg-5-5,
+    .pure-u-lg-1-6,
+    .pure-u-lg-5-6,
+    .pure-u-lg-1-8,
+    .pure-u-lg-3-8,
+    .pure-u-lg-5-8,
+    .pure-u-lg-7-8,
+    .pure-u-lg-1-12,
+    .pure-u-lg-5-12,
+    .pure-u-lg-7-12,
+    .pure-u-lg-11-12,
+    .pure-u-lg-1-24,
+    .pure-u-lg-2-24,
+    .pure-u-lg-3-24,
+    .pure-u-lg-4-24,
+    .pure-u-lg-5-24,
+    .pure-u-lg-6-24,
+    .pure-u-lg-7-24,
+    .pure-u-lg-8-24,
+    .pure-u-lg-9-24,
+    .pure-u-lg-10-24,
+    .pure-u-lg-11-24,
+    .pure-u-lg-12-24,
+    .pure-u-lg-13-24,
+    .pure-u-lg-14-24,
+    .pure-u-lg-15-24,
+    .pure-u-lg-16-24,
+    .pure-u-lg-17-24,
+    .pure-u-lg-18-24,
+    .pure-u-lg-19-24,
+    .pure-u-lg-20-24,
+    .pure-u-lg-21-24,
+    .pure-u-lg-22-24,
+    .pure-u-lg-23-24,
+    .pure-u-lg-24-24 {
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        letter-spacing: normal;
+        word-spacing: normal;
+        vertical-align: top;
+        text-rendering: auto;
+    }
+
+    .pure-u-lg-1-24 {
+        width: 4.1667%;
+        *width: 4.1357%;
+    }
+
+    .pure-u-lg-1-12,
+    .pure-u-lg-2-24 {
+        width: 8.3333%;
+        *width: 8.3023%;
+    }
+
+    .pure-u-lg-1-8,
+    .pure-u-lg-3-24 {
+        width: 12.5000%;
+        *width: 12.4690%;
+    }
+
+    .pure-u-lg-1-6,
+    .pure-u-lg-4-24 {
+        width: 16.6667%;
+        *width: 16.6357%;
+    }
+
+    .pure-u-lg-1-5 {
+        width: 20%;
+        *width: 19.9690%;
+    }
+
+    .pure-u-lg-5-24 {
+        width: 20.8333%;
+        *width: 20.8023%;
+    }
+
+    .pure-u-lg-1-4,
+    .pure-u-lg-6-24 {
+        width: 25%;
+        *width: 24.9690%;
+    }
+
+    .pure-u-lg-7-24 {
+        width: 29.1667%;
+        *width: 29.1357%;
+    }
+
+    .pure-u-lg-1-3,
+    .pure-u-lg-8-24 {
+        width: 33.3333%;
+        *width: 33.3023%;
+    }
+
+    .pure-u-lg-3-8,
+    .pure-u-lg-9-24 {
+        width: 37.5000%;
+        *width: 37.4690%;
+    }
+
+    .pure-u-lg-2-5 {
+        width: 40%;
+        *width: 39.9690%;
+    }
+
+    .pure-u-lg-5-12,
+    .pure-u-lg-10-24 {
+        width: 41.6667%;
+        *width: 41.6357%;
+    }
+
+    .pure-u-lg-11-24 {
+        width: 45.8333%;
+        *width: 45.8023%;
+    }
+
+    .pure-u-lg-1-2,
+    .pure-u-lg-12-24 {
+        width: 50%;
+        *width: 49.9690%;
+    }
+
+    .pure-u-lg-13-24 {
+        width: 54.1667%;
+        *width: 54.1357%;
+    }
+
+    .pure-u-lg-7-12,
+    .pure-u-lg-14-24 {
+        width: 58.3333%;
+        *width: 58.3023%;
+    }
+
+    .pure-u-lg-3-5 {
+        width: 60%;
+        *width: 59.9690%;
+    }
+
+    .pure-u-lg-5-8,
+    .pure-u-lg-15-24 {
+        width: 62.5000%;
+        *width: 62.4690%;
+    }
+
+    .pure-u-lg-2-3,
+    .pure-u-lg-16-24 {
+        width: 66.6667%;
+        *width: 66.6357%;
+    }
+
+    .pure-u-lg-17-24 {
+        width: 70.8333%;
+        *width: 70.8023%;
+    }
+
+    .pure-u-lg-3-4,
+    .pure-u-lg-18-24 {
+        width: 75%;
+        *width: 74.9690%;
+    }
+
+    .pure-u-lg-19-24 {
+        width: 79.1667%;
+        *width: 79.1357%;
+    }
+
+    .pure-u-lg-4-5 {
+        width: 80%;
+        *width: 79.9690%;
+    }
+
+    .pure-u-lg-5-6,
+    .pure-u-lg-20-24 {
+        width: 83.3333%;
+        *width: 83.3023%;
+    }
+
+    .pure-u-lg-7-8,
+    .pure-u-lg-21-24 {
+        width: 87.5000%;
+        *width: 87.4690%;
+    }
+
+    .pure-u-lg-11-12,
+    .pure-u-lg-22-24 {
+        width: 91.6667%;
+        *width: 91.6357%;
+    }
+
+    .pure-u-lg-23-24 {
+        width: 95.8333%;
+        *width: 95.8023%;
+    }
+
+    .pure-u-lg-1,
+    .pure-u-lg-1-1,
+    .pure-u-lg-5-5,
+    .pure-u-lg-24-24 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 80em) {
+    .pure-u-xl-1,
+    .pure-u-xl-1-1,
+    .pure-u-xl-1-2,
+    .pure-u-xl-1-3,
+    .pure-u-xl-2-3,
+    .pure-u-xl-1-4,
+    .pure-u-xl-3-4,
+    .pure-u-xl-1-5,
+    .pure-u-xl-2-5,
+    .pure-u-xl-3-5,
+    .pure-u-xl-4-5,
+    .pure-u-xl-5-5,
+    .pure-u-xl-1-6,
+    .pure-u-xl-5-6,
+    .pure-u-xl-1-8,
+    .pure-u-xl-3-8,
+    .pure-u-xl-5-8,
+    .pure-u-xl-7-8,
+    .pure-u-xl-1-12,
+    .pure-u-xl-5-12,
+    .pure-u-xl-7-12,
+    .pure-u-xl-11-12,
+    .pure-u-xl-1-24,
+    .pure-u-xl-2-24,
+    .pure-u-xl-3-24,
+    .pure-u-xl-4-24,
+    .pure-u-xl-5-24,
+    .pure-u-xl-6-24,
+    .pure-u-xl-7-24,
+    .pure-u-xl-8-24,
+    .pure-u-xl-9-24,
+    .pure-u-xl-10-24,
+    .pure-u-xl-11-24,
+    .pure-u-xl-12-24,
+    .pure-u-xl-13-24,
+    .pure-u-xl-14-24,
+    .pure-u-xl-15-24,
+    .pure-u-xl-16-24,
+    .pure-u-xl-17-24,
+    .pure-u-xl-18-24,
+    .pure-u-xl-19-24,
+    .pure-u-xl-20-24,
+    .pure-u-xl-21-24,
+    .pure-u-xl-22-24,
+    .pure-u-xl-23-24,
+    .pure-u-xl-24-24 {
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        letter-spacing: normal;
+        word-spacing: normal;
+        vertical-align: top;
+        text-rendering: auto;
+    }
+
+    .pure-u-xl-1-24 {
+        width: 4.1667%;
+        *width: 4.1357%;
+    }
+
+    .pure-u-xl-1-12,
+    .pure-u-xl-2-24 {
+        width: 8.3333%;
+        *width: 8.3023%;
+    }
+
+    .pure-u-xl-1-8,
+    .pure-u-xl-3-24 {
+        width: 12.5000%;
+        *width: 12.4690%;
+    }
+
+    .pure-u-xl-1-6,
+    .pure-u-xl-4-24 {
+        width: 16.6667%;
+        *width: 16.6357%;
+    }
+
+    .pure-u-xl-1-5 {
+        width: 20%;
+        *width: 19.9690%;
+    }
+
+    .pure-u-xl-5-24 {
+        width: 20.8333%;
+        *width: 20.8023%;
+    }
+
+    .pure-u-xl-1-4,
+    .pure-u-xl-6-24 {
+        width: 25%;
+        *width: 24.9690%;
+    }
+
+    .pure-u-xl-7-24 {
+        width: 29.1667%;
+        *width: 29.1357%;
+    }
+
+    .pure-u-xl-1-3,
+    .pure-u-xl-8-24 {
+        width: 33.3333%;
+        *width: 33.3023%;
+    }
+
+    .pure-u-xl-3-8,
+    .pure-u-xl-9-24 {
+        width: 37.5000%;
+        *width: 37.4690%;
+    }
+
+    .pure-u-xl-2-5 {
+        width: 40%;
+        *width: 39.9690%;
+    }
+
+    .pure-u-xl-5-12,
+    .pure-u-xl-10-24 {
+        width: 41.6667%;
+        *width: 41.6357%;
+    }
+
+    .pure-u-xl-11-24 {
+        width: 45.8333%;
+        *width: 45.8023%;
+    }
+
+    .pure-u-xl-1-2,
+    .pure-u-xl-12-24 {
+        width: 50%;
+        *width: 49.9690%;
+    }
+
+    .pure-u-xl-13-24 {
+        width: 54.1667%;
+        *width: 54.1357%;
+    }
+
+    .pure-u-xl-7-12,
+    .pure-u-xl-14-24 {
+        width: 58.3333%;
+        *width: 58.3023%;
+    }
+
+    .pure-u-xl-3-5 {
+        width: 60%;
+        *width: 59.9690%;
+    }
+
+    .pure-u-xl-5-8,
+    .pure-u-xl-15-24 {
+        width: 62.5000%;
+        *width: 62.4690%;
+    }
+
+    .pure-u-xl-2-3,
+    .pure-u-xl-16-24 {
+        width: 66.6667%;
+        *width: 66.6357%;
+    }
+
+    .pure-u-xl-17-24 {
+        width: 70.8333%;
+        *width: 70.8023%;
+    }
+
+    .pure-u-xl-3-4,
+    .pure-u-xl-18-24 {
+        width: 75%;
+        *width: 74.9690%;
+    }
+
+    .pure-u-xl-19-24 {
+        width: 79.1667%;
+        *width: 79.1357%;
+    }
+
+    .pure-u-xl-4-5 {
+        width: 80%;
+        *width: 79.9690%;
+    }
+
+    .pure-u-xl-5-6,
+    .pure-u-xl-20-24 {
+        width: 83.3333%;
+        *width: 83.3023%;
+    }
+
+    .pure-u-xl-7-8,
+    .pure-u-xl-21-24 {
+        width: 87.5000%;
+        *width: 87.4690%;
+    }
+
+    .pure-u-xl-11-12,
+    .pure-u-xl-22-24 {
+        width: 91.6667%;
+        *width: 91.6357%;
+    }
+
+    .pure-u-xl-23-24 {
+        width: 95.8333%;
+        *width: 95.8023%;
+    }
+
+    .pure-u-xl-1,
+    .pure-u-xl-1-1,
+    .pure-u-xl-5-5,
+    .pure-u-xl-24-24 {
+        width: 100%;
+    }
+}
